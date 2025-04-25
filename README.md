@@ -1,5 +1,5 @@
 
-# 📦 Sistema de Gestión de Clientes - Samsoft Systems Solutions
+# Sistema de Gestión de Clientes - Samsoft Systems Solutions
 
 Este proyecto utiliza **Docker** y **docker-compose** para levantar una aplicación web PHP con conexión a una base de datos MySQL. El frontend está construido con **Bootstrap 5.3** y **Font Awesome 6.5**.
 
@@ -10,8 +10,8 @@ Este proyecto utiliza **Docker** y **docker-compose** para levantar una aplicaci
 1. Clona el repositorio y entra al directorio:
 
    ```bash
-   git clone https://tu-repo.git
-   cd nombre-del-proyecto
+   git clone https://github.com/samsoft21/sistema.git
+   cd sistema
    ```
 
 2. Ejecuta el siguiente comando para construir las imágenes y levantar los contenedores:
@@ -26,17 +26,17 @@ Este proyecto utiliza **Docker** y **docker-compose** para levantar una aplicaci
 
 ---
 
-## 🌐 Acceso a la aplicación
+##Acceso a la aplicación
 
-Una vez levantado, puedes acceder a la app en:
+3 Una vez levantado, puedes acceder a la app en:
 
-👉 [http://localhost:8080](http://localhost:8080)
+ [http://localhost:8080](http://localhost:8080)
 
 ---
 
-## 🛢 Acceso a la base de datos
+##Acceso a la base de datos
 
-### Opciones:
+### Opciones que permiten realizar diferentes procesos:
 
 - **CLI dentro del contenedor**:
 
@@ -55,7 +55,7 @@ Una vez levantado, puedes acceder a la app en:
 
 ---
 
-## 🧹 Detener y eliminar contenedores
+##Detener y eliminar contenedores
 
 Para detener y eliminar todos los contenedores, redes y volúmenes creados:
 
@@ -63,7 +63,7 @@ Para detener y eliminar todos los contenedores, redes y volúmenes creados:
 docker-compose down
 ```
 
-Si deseas eliminar también los volúmenes (⚠️ se borra la data de MySQL):
+Si deseas eliminar también los volúmenes ( tambien se borra la data de MySQL):
 
 ```bash
 docker-compose down -v
@@ -71,7 +71,7 @@ docker-compose down -v
 
 ---
 
-## 📁 Estructura del proyecto
+**Estructura del proyecto sistema
 
 ```
 .
@@ -85,8 +85,8 @@ docker-compose down -v
 
 ---
 
-## ✨ Autor
-
-**Samsoft Systems Solutions**
-
+**Autor
+**Ing. Segundo Mena By Samsoft Systems Solutions 2025**
+** Santo domingo de los tsachilas -Ecuador**
+** 0978759902**
 ---
