@@ -1,0 +1,36 @@
+services:
+  php_web:
+    build: .
+    container_name: php_web
+    volumes:
+      - ./src:/var/www/html
+      - ./wait-for-it.sh:/wait-for-it.sh  # Asegúrate de agregar el script aquí
+
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql_db
+    networks:
+      - backend
+
+  mysql_db:
+    image: mysql:5.7
+    container_name: mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: facsis
+      MYSQL_PASSWORD: fac123
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
+    networks:
+      - backend
+volumes:
+  mysql_data:
+
+networks:
+  backend:
+    driver: bridge
